@@ -9,12 +9,12 @@ fs.readFile(filename, 'utf-8', (err, data) => {
     const fileLine = data.split(/[\n\r]+/);
     for(line of fileLine) {
         try {
-            sum += getNumberInLine(line)
+            sum += getNumberInLine(line);
         } catch (error) {
-            console.log(error)
+            console.log(error);
         }
     }
-    console.log(sum)
+    console.log(sum);
 });
 
 function getDigit(digit) {
